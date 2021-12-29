@@ -1,0 +1,112 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    user-select: none;
+}
+
+body{
+    background-color: rgb(106, 204, 127);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+   
+}
+
+
+.parent-cover{
+    width: 400px;
+    height: 550px;
+    box-shadow: 0px 0px 5px 5px rgba(0, 0, 0, 0.041);
+    background-color: white;
+    position: relative;
+}
+
+.date{
+ position: relative;
+}
+
+.date i{
+    position: absolute;
+    font-size: 2rem;
+    top: 1rem;
+    right: 1rem;
+}
+
+.date img{
+    width: 400px;
+    height: 200px;
+    background-size: auto;
+}
+
+.date h5{
+    position: absolute;
+    top: 66%;
+    left:5%;
+    color: white;
+    font-size: 1.3rem;
+}
+
+.todo-list{
+    overflow-y: scroll;
+    height: 308px;
+}
+
+.parent-cover .todo-list li{
+    list-style-type: none;
+    font-size: 1.3rem;
+    border-bottom: 1px solid black ;
+    padding: 0.3rem 1rem;
+    font-style: italic;
+    text-transform: capitalize;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+
+}
+
+.parent-cover .todo-list li .todo-text{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.parent-cover .todo-list li .todo-text p{
+    margin-left: 0.5rem;
+}
+
+.input-cover{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    border-top: 1px solid black;
+    padding-top: 0.3rem;
+
+}
+
+.input-cover input{
+    width: 84%;
+    border: none;
+    font-size: 1.4rem;
+    outline: none;
+    margin-bottom: 0.4rem;
+}
+
+.input-cover i{
+    color: blue;
+    font-size: 1.4rem;
+}
+
+::placeholder{
+    color:blue;
+    font-size: 1rem;
+}
+
+ .lineThrough{
+     text-decoration: line-through;
+ }
